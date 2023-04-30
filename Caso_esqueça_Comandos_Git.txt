@@ -1,0 +1,348 @@
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git commit -a -m "Modifiquei"
+[main ab360bd] Modifiquei
+ 1 file changed, 2 insertions(+)
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git push
+fatal: Ocorreu um erro ao enviar a solicitação.
+fatal: A solicitação foi anulada: Não foi possível criar um canal seguro para SSL/TLS.
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/DaviVidal01/Aula-Git.git/'
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ ssh-keygen -t ed25519 -C "davividal0605@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Trilhas02/.ssh/id_ed25519):
+Created directory '/c/Users/Trilhas02/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Trilhas02/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Trilhas02/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:Gj87wcOzy1JHrudW7MZ7oa+naDdWCQZE6LP0kMZview davividal0605@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|         +o      |
+|        . .      |
+|       o . .     |
+|        O . o    |
+|      .*SX + . . |
+|       +@ B o +  |
+|      .ooO + o . |
+|      ..Eo+.O o  |
+|       .+Bo++O.  |
++----[SHA256]-----+
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ list config --list
+bash: list: command not found
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/Trilhas02/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=0000362365@senaimgaluno.com.br
+user.name=Davi Aluno
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+:...skipping...
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/Trilhas02/AppData/Local/Programs/Git/mingw64/etc/ssl/cer
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=0000362365@senaimgaluno.com.br
+user.name=Davi Aluno
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/DaviVidal01/Aula-Git.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/Trilhas02/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=0000362365@senaimgaluno.com.br
+user.name=Davi Aluno
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git remote set-url origin git@github.com:DaviVidal01/Aula-Git
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git pull
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Already up to date.
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:DaviVidal01/Aula-Git
+   89e95d1..ab360bd  main -> main
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/git2/git-teste/Aula-Git (main)
+$
+
+================================================
+
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce (master)
+$ cd WheyShop_Bootstrap
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git add ./
+warning: in the working copy of 'assets/css/bootstrap-grid.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-grid.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-grid.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-grid.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-reboot.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-reboot.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-reboot.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-reboot.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-utilities.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-utilities.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-utilities.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap-utilities.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap.rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/css/bootstrap.rtl.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.bundle.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.bundle.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.esm.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.esm.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git commit -a -m "Adicionando o programa em HTML e CSS do Bootstrap"
+[main f200932] Adicionando o programa em HTML e CSS do Bootstrap
+ 60 files changed, 58923 insertions(+)
+ create mode 100644 assets/css/bootstrap-grid.css
+ create mode 100644 assets/css/bootstrap-grid.css.map
+ create mode 100644 assets/css/bootstrap-grid.min.css
+ create mode 100644 assets/css/bootstrap-grid.min.css.map
+ create mode 100644 assets/css/bootstrap-grid.rtl.css
+ create mode 100644 assets/css/bootstrap-grid.rtl.css.map
+ create mode 100644 assets/css/bootstrap-grid.rtl.min.css
+ create mode 100644 assets/css/bootstrap-grid.rtl.min.css.map
+ create mode 100644 assets/css/bootstrap-reboot.css
+ create mode 100644 assets/css/bootstrap-reboot.css.map
+ create mode 100644 assets/css/bootstrap-reboot.min.css
+ create mode 100644 assets/css/bootstrap-reboot.min.css.map
+ create mode 100644 assets/css/bootstrap-reboot.rtl.css
+ create mode 100644 assets/css/bootstrap-reboot.rtl.css.map
+ create mode 100644 assets/css/bootstrap-reboot.rtl.min.css
+ create mode 100644 assets/css/bootstrap-reboot.rtl.min.css.map
+ create mode 100644 assets/css/bootstrap-utilities.css
+ create mode 100644 assets/css/bootstrap-utilities.css.map
+ create mode 100644 assets/css/bootstrap-utilities.min.css
+ create mode 100644 assets/css/bootstrap-utilities.min.css.map
+ create mode 100644 assets/css/bootstrap-utilities.rtl.css
+ create mode 100644 assets/css/bootstrap-utilities.rtl.css.map
+ create mode 100644 assets/css/bootstrap-utilities.rtl.min.css
+ create mode 100644 assets/css/bootstrap-utilities.rtl.min.css.map
+ create mode 100644 assets/css/bootstrap.css
+ create mode 100644 assets/css/bootstrap.css.map
+ create mode 100644 assets/css/bootstrap.min.css
+ create mode 100644 assets/css/bootstrap.min.css.map
+ create mode 100644 assets/css/bootstrap.rtl.css
+ create mode 100644 assets/css/bootstrap.rtl.css.map
+ create mode 100644 assets/css/bootstrap.rtl.min.css
+ create mode 100644 assets/css/bootstrap.rtl.min.css.map
+ create mode 100644 assets/img/banner.png
+ create mode 100644 assets/img/carousel1.jpg
+ create mode 100644 assets/img/carousel2.jpg
+ create mode 100644 assets/img/carousel3.jpg
+ create mode 100644 assets/img/carousel4.jpg
+ create mode 100644 assets/img/language.png
+ create mode 100644 assets/img/logo.png
+ create mode 100644 assets/img/payment-item.png
+ create mode 100644 assets/img/whey.png
+ create mode 100644 assets/img/wheypro1.png
+ create mode 100644 assets/img/wheypro2.png
+ create mode 100644 assets/img/wheypro3.png
+ create mode 100644 assets/img/wheypro4.png
+ create mode 100644 assets/img/wheypro5.png
+ create mode 100644 assets/img/wheypro6.png
+ create mode 100644 assets/js/bootstrap.bundle.js
+ create mode 100644 assets/js/bootstrap.bundle.js.map
+ create mode 100644 assets/js/bootstrap.bundle.min.js
+ create mode 100644 assets/js/bootstrap.bundle.min.js.map
+ create mode 100644 assets/js/bootstrap.esm.js
+ create mode 100644 assets/js/bootstrap.esm.js.map
+ create mode 100644 assets/js/bootstrap.esm.min.js
+ create mode 100644 assets/js/bootstrap.esm.min.js.map
+ create mode 100644 assets/js/bootstrap.js
+ create mode 100644 assets/js/bootstrap.js.map
+ create mode 100644 assets/js/bootstrap.min.js
+ create mode 100644 assets/js/bootstrap.min.js.map
+ create mode 100644 index.html
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git remote set-url origin git@github.com:DaviVidal01/WheyShop_Bootstrap
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$ git push
+Enumerating objects: 67, done.
+Counting objects: 100% (67/67), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (66/66), done.
+Writing objects: 100% (66/66), 36.86 MiB | 3.95 MiB/s, done.
+Total 66 (delta 30), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (30/30), done.
+To github.com:DaviVidal01/WheyShop_Bootstrap
+   fcb6039..f200932  main -> main
+
+Trilhas02@Lab163 MINGW64 ~/Desktop/Senai_Cursos/7-Client-Side/e-commerce/WheyShop_Bootstrap (main)
+$
+
